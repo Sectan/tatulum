@@ -35,7 +35,8 @@ public class CassandraTables {
                         "type text," +
                         "status text," +
                         "premiered text," +
-                        "summary text" +
+                        "summary text," +
+                        "image text" +
                         ");");
     }
 }
