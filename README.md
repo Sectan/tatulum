@@ -2,7 +2,7 @@
 
 Just a simple project for DMG
 
-Data is provided [tvmaze.com](tvmaze.com)
+Data is provided [tvmaze.com](http://www.tvmaze.com)
 
 ## Contributors
 - Sectan
