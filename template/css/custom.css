@@ -28,6 +28,16 @@ nav img {
     background-color:   #f5f2f0;
 }
 
+.start-bg {
+    background-image:   url('../images/startpage.jpg');
+    background-repeat:  no-repeat;
+    background-size:    cover;
+}
+
+.col-margin-fix {
+    margin-left:        -40px !important;
+}
+
 /**
  ########################### Series Settings ########################### */
 
@@ -40,7 +50,6 @@ nav img {
     position:           relative;
     top:                10px;
     float:              right;
-    cursor:             pointer;
 }
 
 .chip i {

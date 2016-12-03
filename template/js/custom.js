@@ -1,4 +1,12 @@
-$(function() {    
+$(function() {
+    Materialize.fadeInImage('img');
+    
+    /* Responsive Menu */
+    $(".button-collapse").sideNav();
+    
+    /* Collapsable Episodes in Series */
+    $('.collapsible').collapsible();
+    
     /* Serie Cards */
     $('.chips-placeholder').material_chip({
         placeholder:            '+Tag',
