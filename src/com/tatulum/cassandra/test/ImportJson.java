@@ -12,7 +12,7 @@ import org.apache.commons.io.IOUtils;
 import org.json.JSONObject;
 
 /**
- * Test how write data into Cassandra.
+ * Tests how to write data into Cassandra.
  */
 public class ImportJson {
     static String[] CONTACT_POINTS = {"127.0.0.1"};

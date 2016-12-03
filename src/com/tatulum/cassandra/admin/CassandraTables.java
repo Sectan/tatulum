@@ -24,7 +24,7 @@ package com.tatulum.cassandra.admin;
 import com.datastax.driver.core.Session;
 
 /**
- * Created by daniel on 03.12.16.
+ * Creates tables for cassandra.
  */
 public class CassandraTables {
     public static void addShowTable(String keyspace, Session session) {
