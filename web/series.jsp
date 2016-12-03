@@ -1,6 +1,7 @@
 <%@ page import="com.tatulum.cassandra.data.SeriesContent" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="com.datastax.driver.core.Row" %>
+<%@page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,7 +69,7 @@
             <div class="footer-copyright">
                 <div class="container">
                     © 2016 Copyright Tatulum Hack Team
-                    <a class="grey-text text-lighten-4 right" href="https://localhackday.mlh.io/" target="_blank">MLH Local Hack Day</a>
+                    <a class="grey-text text-lighten-4 right" href="https://localhackday.mlh.io/" target="_blank"><img src="res/mlh-local-hack-day-white.svg" class="responsive-img" alt="MLH Local Hack Day"></a>
                 </div>
             </div>
         </footer>
