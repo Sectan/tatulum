@@ -3,6 +3,7 @@
  *      Copyright (C) 2016  Sectan
  *      Copyright (C) 2016  jaunerc
  *      Copyright (C) 2016  alkazua
+ *      Copyright (C) 2016  haubschueh
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -26,7 +27,7 @@ import com.datastax.driver.core.Row;
 import com.datastax.driver.core.Session;
 
 /**
- * Testing to connection to the Cassandra Docker container.
+ * Tests the connection to the Cassandra Docker container.
  */
 public class ConnectionTest {
     static String[] CONTACT_POINTS = {"192.168.43.221"};

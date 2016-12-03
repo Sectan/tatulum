@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Import custom.css-->
+    <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <meta charset="UTF-8">
+    <link rel="icon" type="img/ico" href="res/fav.png">
+    <title>Series</title>
+</head>
+
+<body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    
+    <main>
+    
+        <div class="container">
+            <div class="row">
+                <!-- Navigation -->
+                <div class="col s12">
+                    <nav>
+                        <div class="nav-wrapper">
+                            <a href="index.html" class="brand-logo center"><img src="res/logo.png" alt="Tatulum"></a>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                                <li><a href="series.html"><i class="material-icons left">search</i>Find Series</a></li>
+                                <li><a href="watched.html"><i class="material-icons left">visibility</i>Watched Series</a></li>
+                                <li><a href="team.html"><i class="material-icons left">group</i>Team</a></li>
+                            </ul>
+                            <ul class="side-nav" id="mobile-demo">
+                                <li><a href="series.html">Find Series</a></li>
+                                <li><a href="watched.html">Watched Series</a></li>
+                                <li><a href="team.html">Team</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s3">
+                    <img src="res/one-piece.jpg" class="responsive-img">
+                </div>
+                <div class="col s9">
+                    <div class="card-panel">
+                        <span class="blue-text text-darken-2">This is a card panel with dark blue text</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Episode List as Collapsibles -->
+                <div class="col s12">
+                <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Season 3</div>
+                    <div class="collapsible-body">
+                        <table class="responsive-table striped">
+                            <thead>
+                                <tr>
+                                    <th data-field="id">Number</th>
+                                    <th data-field="name">Airdate</th>
+                                    <th data-field="price">Name</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>61</td>
+                                    <td>Mar 7, 2001</td>
+                                    <td>Angry Finale! Cross the Red Line!</td>
+                                </tr>
+                                <tr>
+                                    <td>60</td>
+                                    <td>Mar 7, 2001</td>
+                                    <td>Angry Finale! Cross the Red Line!</td>
+                                </tr>
+                                <tr>
+                                    <td>59</td>
+                                    <td>Mar 7, 2001</td>
+                                    <td>Angry Finale! Cross the Red Line!</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Season 2</div>
+                    <div class="collapsible-body">
+                        <table class="responsive-table striped">
+                            <thead>
+                                <tr>
+                                    <th data-field="id">Number</th>
+                                    <th data-field="name">Airdate</th>
+                                    <th data-field="price">Name</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>61</td>
+                                    <td>Mar 7, 2001</td>
+                                    <td>Angry Finale! Cross the Red Line!</td>
+                                </tr>
+                                <tr>
+                                    <td>60</td>
+                                    <td>Mar 7, 2001</td>
+                                    <td>Angry Finale! Cross the Red Line!</td>
+                                </tr>
+                                <tr>
+                                    <td>59</td>
+                                    <td>Mar 7, 2001</td>
+                                    <td>Angry Finale! Cross the Red Line!</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Season 1</div>
+                    <div class="collapsible-body">
+                        <table class="responsive-table striped">
+                            <thead>
+                                <tr>
+                                    <th data-field="id">Number</th>
+                                    <th data-field="name">Airdate</th>
+                                    <th data-field="price">Name</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>61</td>
+                                    <td>Mar 7, 2001</td>
+                                    <td>Angry Finale! Cross the Red Line!</td>
+                                </tr>
+                                <tr>
+                                    <td>60</td>
+                                    <td>Mar 7, 2001</td>
+                                    <td>Angry Finale! Cross the Red Line!</td>
+                                </tr>
+                                <tr>
+                                    <td>59</td>
+                                    <td>Mar 7, 2001</td>
+                                    <td>Angry Finale! Cross the Red Line!</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+    <div class="container">
+        <footer class="page-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2016 Copyright Tatulum Hack Team
+                    <a class="grey-text text-lighten-4 right" href="https://localhackday.mlh.io/" target="_blank">MLH Local Hack Day</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
