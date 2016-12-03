@@ -24,7 +24,7 @@ package com.tatulum.cassandra.admin;
 import com.datastax.driver.core.Session;
 
 /**
- * .
+ * Creates keystores for cassandra.
  */
 public class CassandraKeyspace {
     public static void addKeyspace(String name, Session session) {

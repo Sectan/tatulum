@@ -27,7 +27,7 @@ import com.datastax.driver.core.Row;
 import com.datastax.driver.core.Session;
 
 /**
- * Testing to connection to the Cassandra Docker container.
+ * Tests the connection to the Cassandra Docker container.
  */
 public class ConnectionTest {
     static String[] CONTACT_POINTS = {"127.0.0.1"};
