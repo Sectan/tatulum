@@ -84,7 +84,7 @@
         Row row;
 
         seriesCount = SeriesContent.getSeriesCount();
-        rowCount = (seriesCount % 2) + 1;
+        rowCount = (seriesCount / 2) + (seriesCount % 2);
         iterator = SeriesContent.getSeries();
 
         for(long i = 0; i < rowCount; i++) {
@@ -98,7 +98,7 @@
             out.println("<div class=\"col s12 m6\">");
             out.println("<div class=\"card hoverable horizontal blue-grey darken-1\">");
             out.println("<div class=\"card-image\">");
-            out.println("<img src=\"" + row.getString("image") + "\">"); // TODO: Image from tvmaze
+            out.println("<img src=\"" + row.getString("image") + "\">");
             out.println("<span class=\"card-title\">" + row.getString("name") +  "</span>");
             out.println("</div>");
             out.println("<div class=\"card-stacked\">");
@@ -119,7 +119,7 @@
             out.println("<div class=\"col s12 m6\">");
             out.println("<div class=\"card hoverable horizontal blue-grey darken-1\">");
             out.println("<div class=\"card-image\">");
-            out.println("<img src=\"" + row.getString("image") + "\">"); // TODO: Image from tvmaze
+            out.println("<img src=\"" + row.getString("image") + "\">");
             out.println("<span class=\"card-title\">" + row.getString("name") +  "</span>");
             out.println("</div>");
             out.println("<div class=\"card-stacked\">");
