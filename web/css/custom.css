@@ -15,6 +15,12 @@ footer.page-footer {
     padding-top:        0;
 }
 
+footer img {
+    width:              30%;
+    margin-top:         15px;
+    float:              right;
+}
+
 nav, .btn, .card, .page-footer {
     background-color:   purple !important;
 }
@@ -66,4 +72,17 @@ nav img {
 
 .card.horizontal .card-image {
     max-width:          30%;
+}
+
+/**
+ ########################### Construction Settings ########################### */
+.construction img {
+    opacity:            0.5 !important;
+    width:              60%;
+}
+
+.construction div {
+    font-size:          50px;
+    margin-top:         20%;
+    opacity:            0.5;
 }
