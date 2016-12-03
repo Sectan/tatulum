@@ -17,14 +17,10 @@ $(function() {
     /**
      ** ################## User Action ################## */
     $('.chips').on('chip.add', function(e, chip){
-        console.log("Chip added: ", chip["tag"]);
+        Materialize.toast(chip['tag'] + " what a wonderful idea", 4000);
     });
 
     $('.chips').on('chip.delete', function(e, chip){
-        console.log("Chip removed: ", chip["tag"]);
-    });
-
-    $('.chips').on('chip.select', function(e, chip){
-        console.log("Chip selected: ", chip["tag"]);
+        Materialize.toast(chip['tag'] + " removed", 4000);
     });
 });
