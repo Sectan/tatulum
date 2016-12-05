@@ -22,4 +22,6 @@ hs_err_pid*
 .classpath
 .project
 /web/lib
+
+#Alan
 .idea/encodings.xml
