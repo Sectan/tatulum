@@ -23,4 +23,9 @@ $(function() {
     $('.chips').on('chip.delete', function(e, chip){
         Materialize.toast(chip['tag'] + " removed", 4000);
     });
+    
+    $('.rating').children().click(function() {
+        /* Copyright Alan Meile*/
+        Materialize.toast( 6 - parseInt($( '.rating>span' ).index( this ) + 1)  );
+    })
 });

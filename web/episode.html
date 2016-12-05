@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Import custom.css-->
+    <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <meta charset="UTF-8">
+    <link rel="icon" type="img/ico" href="res/fav.png">
+    <title>Series</title>
+</head>
+
+<body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    
+    <main>
+    
+        <div class="container">
+            <div class="row">
+                <!-- Navigation -->
+                <div class="col s12">
+                    <nav>
+                        <div class="nav-wrapper">
+                            <a href="index.html" class="brand-logo center"><img src="res/logo.png" alt="Tatulum"></a>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                                <li><a href="series.html"><i class="material-icons left">search</i>Find Series</a></li>
+                                <li><a href="watched.html"><i class="material-icons left">visibility</i>Watched Series</a></li>
+                                <li><a href="team.html"><i class="material-icons left">group</i>Team</a></li>
+                            </ul>
+                            <ul class="side-nav" id="mobile-demo">
+                                <li><a href="series.html">Find Series</a></li>
+                                <li><a href="watched.html">Watched Series</a></li>
+                                <li><a href="team.html">Team</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s3">
+                    <img src="res/one-piece.jpg" class="responsive-img">
+                </div>
+                <form class="col s7">
+                    <h1>Comment</h1>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                            <label for="icon_prefix2">Leave a Comment</label>
+                        </div>
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Send Comment
+                        <i class="material-icons right">send</i>
+                    </button>
+                </form>
+                <div class="col s2">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Episode Info</span>
+                            <time datetime="2014-09-20" class="icon">
+                                <em>Saturday</em>
+                                <strong>September</strong>
+                                <h5 class="the-date valign">20</h5>
+                            </time>
+                            <br/>
+                            Popularity
+                            <div class="rating">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                            Share
+                            <br/>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=Tatulum is love"><i class="fa fa-facebook-square"></i></a>
+                            <a href="https://twitter.com/home?status=Tatulum%20is%20love"><i class="fa fa-twitter-square"></i></a>
+                            <a href="https://plus.google.com/share?url=Tatulum%20is%20love"><i class="fa fa-google-plus-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <!-- A Comment -->
+                <div class="col s12">
+                    <div class="card-panel">
+                        <sup>12.12.2016</sup><br>
+                        Wow what an amazing episode
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- A Comment -->
+                <div class="col s12">
+                    <div class="card-panel">
+                        <sup>12.12.2016</sup><br>
+                        Wow what an amazing episode
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+    <div class="container">
+        <footer class="page-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2016 Copyright Tatulum Hack Team
+                    <a class="grey-text text-lighten-4 right" href="https://localhackday.mlh.io/" target="_blank"><img src="res/mlh-local-hack-day-white.svg" class="responsive-img" alt="MLH Local Hack Day"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
