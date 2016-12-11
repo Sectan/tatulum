@@ -1,8 +1,6 @@
 package com.tatulum.cassandra.data;
 
-import com.datastax.driver.core.Row;
-import com.datastax.driver.core.Session;
-import com.datastax.driver.core.ResultSet;
+import com.datastax.driver.core.*;
 import com.tatulum.cassandra.admin.CassandraSession;
 
 import java.io.PrintWriter;
@@ -30,8 +28,24 @@ public class SeriesContent {
         Session session = CassandraSession.getSession();
         ResultSet results = session.execute("SELECT * FROM tatulum.shows;");
         return results.iterator();
-
     }
 
+    public static Iterator getShow(int id) {
+        Iterator iterator;
+        Session session = CassandraSession.getSession();
+        PreparedStatement statement = session.prepare("SELECT * FROM tatulum.shows WHERE id = ?");
+        BoundStatement boundStatement = new BoundStatement(statement);
+        ResultSet results = session.execute(boundStatement.bind(id));
+        return results.iterator();
+    }
+
+    public static Iterator getEpisodes(int id) {
+        Iterator iterator;
+        Session session = CassandraSession.getSession();
+        PreparedStatement statement = session.prepare("SELECT * FROM tatulum.episodes WHERE show = ?");
+        BoundStatement boundStatement = new BoundStatement(statement);
+        ResultSet results = session.execute(boundStatement.bind(id));
+        return results.iterator();
+    }
 
 }

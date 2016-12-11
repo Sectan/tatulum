@@ -108,7 +108,7 @@
             out.println("<p>" + row.getString("summary"));
             out.println("</div>");
             out.println("<div class=\"card-action\">");
-            out.println("<a href=\"spec.html\">Episode list</a>"); //TODO: Dynamic Link to show
+            out.println("<a href=\"show.jsp?id=" + row.getInt("id") + "\">Episode list</a>"); //TODO: Dynamic Link to show
             out.print("</div>\n</div>\n</div>\n</div>");
 
             if(!(iterator.hasNext())) {
@@ -129,7 +129,7 @@
             out.println("<p>" + row.getString("summary"));
             out.println("</div>");
             out.println("<div class=\"card-action\">");
-            out.println("<a href=\"spec.html\">Episode list</a>"); //TODO: Dynamic Link to show
+            out.println("<a href=\"show.jsp?id=" + row.getInt("id") + "\">Episode list</a>"); //TODO: Dynamic Link to show
             out.print("</div>\n</div>\n</div>\n</div>");
 
             out.println("</div>");

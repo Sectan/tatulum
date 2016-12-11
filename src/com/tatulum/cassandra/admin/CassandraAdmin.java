@@ -80,6 +80,7 @@ public class CassandraAdmin {
      */
     public void createTables() {
         CassandraTables.addShowTable("tatulum", session);
+        CassandraTables.addEpisodesTable("tatulum", session);
     }
 
     /**

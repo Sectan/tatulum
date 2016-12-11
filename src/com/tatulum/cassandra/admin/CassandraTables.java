@@ -39,4 +39,20 @@ public class CassandraTables {
                         "image text" +
                         ");");
     }
+
+    public static void addEpisodesTable(String keyspace, Session session) {
+        session.execute(
+                "CREATE TABLE IF NOT EXISTS " + keyspace + ".episodes (" +
+                        "show int," +
+                        "id int," +
+                        "name text," +
+                        "season int," +
+                        "number int," +
+                        "airdate text," +
+                        "airtime text," +
+                        "runtime int," +
+                        "image text," +
+                        "summary text," +
+                        "PRIMARY KEY (show, id));");
+    }
 }
